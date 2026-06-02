@@ -16,7 +16,7 @@ server:
     context-path: /api/goviya-chat-core
 
 swagger:
-  server-url: http://localhost:8083
+  server-url: http://165.245.191.211:8083
 
 springdoc:
   swagger-ui:
