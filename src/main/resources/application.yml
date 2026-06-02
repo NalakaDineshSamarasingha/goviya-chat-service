@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: GOVIYA-CHAT-SERVICE
+  boot:
+    admin:
+      client:
+        url: http://localhost:8080
+        enabled: true
+        auto-registration: true
+  profiles:
+    active: local
+
+server:
+  port: 8083
+  servlet:
+    context-path: /api/goviya-chat-core
+
+swagger:
+  server-url: http://localhost:8083
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+    doc-expansion: none
