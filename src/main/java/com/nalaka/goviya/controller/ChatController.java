@@ -32,4 +32,13 @@ public class ChatController {
         }
         return ResponseEntity.ok(chatService.getSessionMessages(sessionId));
     }
+
+    @PostMapping("/sessions")
+    public ResponseEntity<ChatSession> getOrCreateSession(@RequestBody java.util.Map<String, String> payload) {
+        String senderId = payload.get("senderId");
+        String receiverId = payload.get("receiverId");
+        String senderName = payload.get("senderName");
+        String receiverName = payload.get("receiverName");
+        return ResponseEntity.ok(chatService.getOrCreateSession(senderId, receiverId, senderName, receiverName));
+    }
 }
