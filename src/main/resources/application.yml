@@ -4,7 +4,7 @@ spring:
   boot:
     admin:
       client:
-        url: http://localhost:8080
+        url: http://localhost:9189
         enabled: true
         auto-registration: true
   profiles:
@@ -16,7 +16,7 @@ server:
     context-path: /api/goviya-chat-core
 
 swagger:
-  server-url: http://165.245.191.211:8083
+  server-url: http://52.118.205.242:9189
 
 springdoc:
   swagger-ui:
